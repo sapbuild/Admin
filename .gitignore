@@ -1,0 +1,12 @@
+.idea/
+dev/
+dist/
+doc/
+node_modules/
+logs/
+lib-cov/
+
+.DS_Store
+npm-debug.log
+*.sublime-*
+*.iml
