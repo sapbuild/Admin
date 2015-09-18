@@ -25,8 +25,9 @@
                 "stdout": "debug",
                 "logfile": "info"
             }
-        },"http" : {
-          "logMode" : "both"
+        },
+        "http": {
+            "logMode": "both"
         }
     },
     "db": {
@@ -47,30 +48,38 @@
     "deployment": {
         "strategy": "single"
     },
+    "http": {
+        "port": 9001,
+        "proxy": {
+            "host": "proxy",
+            "port": 8080
+        },
+        "secureFlag": false
+    },
     "web": {
         "root": "../dev",
         "errors": {
             "root": "errors"
         },
-		"indexFallback" : [
-			"/login",
-			"/console",
-			"/privacystatement",
+        "indexFallback": [
+            "/login",
+            "/console",
+            "/privacystatement",
             "/tos"
-		],
+        ],
         "compression": {
             "threshold": 512
         },
         "body-parser": {
-          "json": {
-            "limit": "1mb"
-          }
-      }
+            "json": {
+                "limit": "1mb"
+            }
+        }
     },
-      "fileUpload":{
+    "fileUpload": {
         "limits": {
             "fields": 500,
-            "fileSize": 500.5e7,
+            "fileSize": 5005000000,
             "files": 5000,
             "parts": 5000
         }
@@ -87,5 +96,8 @@
     },
     "services": "./config/services.json",
     "security": "./config/security.json",
-    "features": "./config/features.json"
+    "features": "./config/features.json",
+    "session": {
+        "secret": "37d0b52409c721b691ad40247984a1ea59b406a94f158b7beaccdbda3e53af79"
+    }
 }
