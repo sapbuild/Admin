@@ -36,6 +36,18 @@
     ```
 
 Go to [http://localhost:9001](http://localhost:9001) in Chrome browser and click Join
+####Debugging the Node.js backend
+Starting BUILD with "grunt serve" will start the debug server on the default port 5858. You can connect to this debugger session with tools like Webstorm or node-inspector. The easiest and fastest way to debug the Node.js backend is to use node-inspector. 
+You can install node-inspector globally via:
+```sh
+npm install -g node-inspector
+```
+and connect then to the running server via
+```sh
+node-inspector --no-preload
+```
+The option --no-preload will speed up the initiliziation dramatically as it doesn't preload all source files, but loads them when neccessary.
+
 
 # Create Admin User
 To follow...
