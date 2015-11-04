@@ -10,12 +10,12 @@
 
 ###Download / Clone
 
-1. Clone [BUILD](https://github.com/SAP/BUILD) repo
+1. Clone [Admin](https://github.com/sapbuild/Admin) repo
     ```sh
     git clone https://github.com/sapbuild/Admin.git
     ```
 
-2. Install required node modules (dependencies) (note, you need to be in the BUILD/ folder within the repo):
+2. Install required node modules (dependencies):
     ```sh 
     npm install -g grunt-cli
     cd Admin
@@ -36,6 +36,9 @@
     ```
 
 Go to [http://localhost:9001](http://localhost:9001) in Chrome browser and click Join
+
+# Create Admin User
+To follow...
 
 # BUILD on GitHub
 
