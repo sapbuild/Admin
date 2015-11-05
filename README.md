@@ -23,7 +23,7 @@
     sudo npm install
     ```
     
-3. Initialize the database(Required just the first time if not already done by BUILD):
+3. Initialize the database (required just the first time if not already done by BUILD):
    ```sh
     cd server
     node initSchema.js
@@ -48,7 +48,7 @@ and connect then to the running server via
 ```sh
 node-inspector --no-preload
 ```
-The option --no-preload will speed up the initiliziation dramatically as it doesn't preload all source files, but loads them when neccessary.
+The option --no-preload will speed up the initialization dramatically as it doesn't preload all source files, but loads them when necessary.
 
 
 ## Create a user with the Admin role
@@ -67,7 +67,7 @@ To manage the emails blacklist, you can use the optout-script.js in server/. The
 
 ##### Examples
 
-`` node optout-script.js  add bob@sap.com dave@sap.com`` 
+`` node optout-script.js add bob@sap.com dave@sap.com`` 
 Will add bob@sap.com and dave@sap.com to the blacklist.
 
 `` node optout-script.js  remove bob@sap.com``
@@ -75,11 +75,11 @@ Will remove bob@sap.com from the blacklist.
 
 ### The following happens when a user is removed via the admin console
 - Remove the projects owned by this user from projects collection,
-- Remove the user from project user list (remove from participant list)
+- Remove the user from project user list (remove from participant list),
 - Remove the studies belonging to the deleted project from studies collection,
-- Remove answers and annotations made by the user in studies he participated in
-- Remove user + deleted projects from roles collection
-- Remove user from users collection
+- Remove answers and annotations made by the user in studies he participated in,
+- Remove user + deleted projects from roles collection,
+- Remove user from users collection.
 
 
 # BUILD on GitHub
